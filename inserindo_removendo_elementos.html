@@ -9,7 +9,7 @@
 
 			$(document).ready(() => {
 				
-				
+				$('.item2').remove()
 
 			})
 
@@ -18,18 +18,19 @@
 
 	<body>
 		
-		<p>Nome:</p>
-		<input type="text" id="nome" />
-		<br />
+		<ul id="lista1">
+			<li>Item 1</li>
+			<li class="item2">Item 2</li>
+			<li>Item 3</li>
+		</ul>
 
-		<p>Onde você nos encontrou?</p>
-		<select id="origem">
-			<option value="1">Google</option>
-			<option value="2">Facebook</option>
-			<option value="3">Rádio</option>
-			<option value="4">Outros meios</option>
-		</select>
-		
+		<div id="lista2">
+			<div>Item 1</div>
+			<div class="item2">Item 2</div>
+			<div>Item 3</div>
+		</div>
+
+		<hr id="linha" />
 
 	</body>
 
