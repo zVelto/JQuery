@@ -126,23 +126,13 @@
 				})
 				*/
 
-				$('#nome').focus((e) => {
-					console.log('Esse elemento HTML recebeu o foco (nome)')
+				$('#nome, #email').focus((e) => {
+					//console.log('Esse elemento HTML recebeu o foco')
 					$(e.target).addClass('inputFocado')
 				})
 
-				$('#email').focus((e) => {
-					console.log('Esse elemento HTML recebeu o foco (e-mail)')
-					$(e.target).addClass('inputFocado')
-				})
-
-				$('#nome').blur((e) => {
-					console.log('Esse elemento HTML perdeu o foco (nome)')
-					$(e.target).removeClass('inputFocado')
-				})
-
-				$('#email').blur((e) => {
-					console.log('Esse elemento HTML perdeu o foco (e-mail)')
+				$('#nome, #email').blur((e) => {
+					//console.log('Esse elemento HTML perdeu o foco')
 					$(e.target).removeClass('inputFocado')
 				})
 
